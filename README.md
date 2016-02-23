@@ -24,15 +24,18 @@ Utilizamos principalmente:
 
 #### CSS
 
+Utilizamos:
+* Gradientes para el título.
+* Cambiamos la fuente.
+* Cambiamos el fondo.
+* Cambiamos los bordes y posicionamiento de la imagen.
+* Espacio de color hsla.
 
 #### Emmet
 
 Para instalar Emmet en Atom, debemos ir a "Packages" -> "Settings View" -> "Install Packages/Themes", buscamos el paquete Emmet y le damos a Install.
 ![Emmet](http://files.catbox.moe/scbjix.png "Emmet")
 
-
-#### Uso de Mocha y Chai
-#### Uso de Gulp
 
 ### Despliegue en github.io
 
