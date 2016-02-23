@@ -27,6 +27,8 @@ Utilizamos principalmente:
 
 #### Emmet
 
+Para instalar Emmet en Atom, debemos ir a "Packages" -> "Settings View" -> "Install Packages/Themes", buscamos el paquete Emmet y le damos a Install.
+![Emmet](http://files.catbox.moe/scbjix.png "Emmet")
 
 
 #### Uso de Mocha y Chai
