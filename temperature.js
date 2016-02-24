@@ -2,15 +2,16 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-  
+  var regexp = /^([-+]?\d+(?:\.\d*)?(?:e[-+]?\d+)?)\s*((?:f(?:a(?:r(?:e(?:n(?:h(?:e(?:i(?:t)?)?)?)?)?)?)?)?)|(?:c(?:e(?:l(?:s(?:i(?:u(?:s)?)?)?)?)?)?))$/i;
+
   var m = temp.match(regexp);
-  
+
   if (m) {
     var num = m[1];
     var type = m[2];
+    type = type.toUpperCase();
     num = parseFloat(num);
-    if (type == 'c' || type == 'C') {
+    if (type.charAt(0) == 'C') {
       result = (num * 9/5)+32;
       result = result.toFixed(1)+" Farenheit"
     }
