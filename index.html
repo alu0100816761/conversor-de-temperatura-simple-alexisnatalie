@@ -1,24 +1,33 @@
-<!DOCTYPE html>
 <html>
   <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>JavaScript Temperature Converter</title>
-     <link href="normalize.css" rel="stylesheet" type="text/css">
-     <link href="global.css" rel="stylesheet" type="text/css">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>JavaScript Temperature Converter</title>
+      <link href="global.css" rel="stylesheet" type="text/css">
 
      <script type="text/javascript" src="temperature.js"></script>
   </head>
   <body>
-    <h1>Temperature Converter</h1>
+    <header>
+      <h1>Temperature Converter</h1>
+      <p>Alexis Daniel Fuentes Pérez | Natalie Dajakaj</p>
+    </header>
     <table>
       <tr>
         <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
-      </tr>
-      <tr>
-        <th>Converted Temperature:</th>
-        <td><span class="output" id="converted"></span></td>
+        <td>
+          <form id="formulario" onsubmit="calculate();">
+          <input id="original"
+                 placeholder="330e-1 Far"
+                 size="50"
+                 title = "Escribe un número seguido de alguna subcadena de 'Farenheit' o 'Celsius'."
+                 pattern="(^([-+]?\d+(?:\.\d*)?(?:e[-+]?\d+)?)\s*((?:[fF](?:[aA](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)|(?:[cC](?:[eE](?:[lL](?:[sS](?:[iI](?:[uU](?:[sS])?)?)?)?)?)?))$)"
+          />
+          </form>
+        </td>
       </tr>
     </table>
+    <div id="temp">
+      <img id="im" src="http://files.catbox.moe/0r1g2a.png">
+    </div>
   </body>
 </html>
